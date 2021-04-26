@@ -1,0 +1,21 @@
+@import 'cover.css';
+
+.coverImg div {
+    color: var(--white-edge);
+    font-weight: bold;
+    font-size: 2rem;
+    position: absolute;
+}
+
+@media screen and (min-width:640px) {
+    .coverImg div {
+        font-size: 3rem;
+    }
+}
+
+.coverImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid var(--line);
+}

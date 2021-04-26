@@ -1,0 +1,104 @@
+
+
+
+#introduction {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--base);
+    padding: 2rem;
+}
+
+.introWrapper, .visionWrapper, .stacksWrapper {
+    padding: 1.5rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.introWrapper, .visionWrapper {
+    width: 90%;
+}
+
+.stacksWrapper {
+    width: 100%;
+}
+
+@media screen and (min-width:640px) {
+    .introWrapper, .visionWrapper {
+        width: 70%;
+    }
+    .stacksWrapper {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .introWrapper, .visionWrapper {
+        width: 50%;
+    }
+    .stacksWrapper {
+        width: 60%;
+    }
+}
+
+.statusBar {
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: var(--white-edge);
+    border-radius: 1.5rem;
+    display: grid;
+    grid-auto-flow: row;
+    width: 120%;
+    margin-left: -10%;
+}
+
+@media screen and (min-width:640px) {
+    .statusBar {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+.introWrapper h1, .visionWrapper h1 {
+    border-bottom: 2px solid gray;
+}
+
+.statusBar .statusItem {
+    padding: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.2s ease;
+}
+
+.statusBar .statusItem:hover {
+    transform: scale(1.2);
+}
+
+.statusItem .statusIcon {
+    padding: 1rem;
+    border-radius: 50%;
+    font-size: 3rem;
+    background-color: skyblue;
+    color: whitesmoke;
+    transition: all 0.2s ease;
+}
+
+.statusBar .statusItem:hover .statusIcon {
+    filter: brightness(1.1);
+}
+
+.statusItem  .statusDecription {
+    color: teal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+

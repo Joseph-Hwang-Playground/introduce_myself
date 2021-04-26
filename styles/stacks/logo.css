@@ -1,0 +1,104 @@
+
+
+.logo {
+    background-position: center;
+    background-size: 7rem;
+    background-repeat: no-repeat;
+}
+
+#logo_html {
+    background-image: url('../../img/html.png');
+}
+
+#logo_css {
+    background-image: url('../../img/css.png');
+    background-size: 5.5rem;
+}
+
+#logo_js {
+    background-image: url('../../img/js.png');
+    background-size: 6.5rem;
+}
+
+#logo_ts {
+    background-image: url('../../img/ts.png');
+    background-size: 6.5rem;
+}
+
+#logo_scss {
+    background-image: url('../../img/scss.png');
+}
+
+#logo_tailwind {
+    background-image: url('../../img/tailwind.svg');
+}
+
+#logo_python {
+    background-image: url('../../img/python.webp');
+}
+
+#logo_django {
+    background-image: url('../../img/django.png');
+}
+
+#logo_DRF {
+    background-image: url('../../img/DRF.png');
+    background-size: 9rem;
+}
+
+#logo_graphene {
+    background-image: url('../../img/graphene.png');
+}
+
+#logo_flask {
+    background-image: url('../../img/flask.png');
+}
+
+#logo_apollo {
+    background-image: url('../../img/apollo.svg');
+    background-size: 9rem;
+}
+
+#logo_graphql {
+    background-image: url('../../img/graphql.png');
+}
+
+#logo_react {
+    background-image: url('../../img/react.png');
+}
+
+#logo_redux {
+    background-image: url('../../img/redux.png');
+}
+
+#logo_next {
+    background-image: url('../../img/next.png');
+}
+
+#logo_nest {
+    background-image: url('../../img/nest.svg');
+}
+
+#logo_docker {
+    background-image: url('../../img/docker.png');
+}
+
+#logo_nginx {
+    background-image: url('../../img/nginx.png');
+}
+
+#logo_ubuntu {
+    background-image: url('../../img/ubuntu.png');
+}
+
+#logo_flutter {
+    background-image: url('../../img/flutter.png');
+}
+
+#logo_kubernetes {
+    background-image: url('../../img/kubernetes.png');
+}
+
+#logo_postgresql {
+    background-image: url('../../img/postgresql.png');
+}

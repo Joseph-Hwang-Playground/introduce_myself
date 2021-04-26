@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/globals.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav id="navMobile"></nav>
+
+    <nav id="navDesktop">
+      <a href="#introduction">Introduction</a>
+      <a href="#vision">Vision</a>
+      <a href="#stacks">Stacks</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div id="root">
+      <section id="greeting">
+        <div class="rellax coverImg" data-rellax-speed="-10">
+          <div>Hello! My Name Is 황현규!</div>
+        </div>
+      </section>
+
+      <section id="introduction">
+        <div class="introWrapper">
+          <h1>#Introduction</h1>
+          <h2>Hello, my name is 황현규!</h2>
+          <p>
+            풀스택을 지향하는 아마추어 프로그래머이자 창업가가 되고 싶습니다.
+            <br />
+            <br />
+            중학교 때부터 창업이나 자기계발과 관련된 서적을 여러권 읽었었고,
+            <br />
+            요즘에는 사람들에게 어떻게 해야 좋은 가치를 제공할 수 있을지에 대해
+            고민하고 있습니다. <br />
+            <br />
+            또한 어떻게 사람들에게 가치를 제공해야 할지에 대한 생각들을 최대한
+            실현시키기 위해 코딩을 열심히 배우고 있습니다.
+            <br />
+            <br />
+            음악과 사진에 관심이 많습니다. <br />
+            최근에는 해외 R&B에 푹 빠져있습니다. <br />
+            Lauv, Honne, Lany와 같은 아티스트들의 노래를 좋아합니다. <br />
+            <br />
+            또한 야경을 굉장히 많이 좋아합니다. <br />
+            세계일주를 하며 예쁜 야경으로 소문난 장소들의 야경사진을 찍고픈 꿈이
+            있습니다.
+          </p>
+          <div class="statusBar">
+            <div class="statusItem">
+              <i class="statusIcon fas fa-user"></i>
+              <span class="statusDecription">Born at 2002</span>
+            </div>
+            <div class="statusItem">
+              <i class="statusIcon fas fa-university"></i>
+              <span class="statusDecription"
+                >Undergraduate program at UNIST</span
+              >
+            </div>
+            <div class="statusItem">
+              <i class="statusIcon fas fa-info-circle"></i>
+              <span class="statusDecription"
+                >I want to do something useful!</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="vision">
+        <div class="visionWrapper">
+          <h1>#Vision</h1>
+          <h2>"유용함을 제공하고 싶습니다"</h2>
+          <p>
+            저는 사람들에게 어떻게 해야 유용함을 제공할 수 있을지 많이
+            고민합니다. <br />
+            <br />
+            요즘에 머릿속에서 떠오르는 아이디어들은 두 가지 부류로 분류될 수
+            있습니다 <br />
+            <br />
+            하나의 부류는 일상생활을 조금 더 편리하게 해주는 기능적 측면의
+            아이디어들 입니다. <br />
+            현재 인터넷에 배포되어 있는 FLglance 프로젝트나 현재 진행중인 MYPY
+            프로젝트가 이에 해당합니다 <br />
+            <br />
+            다른 하나의 부류는 어찌보면 각박하다고도 할 수 있는 세상에서 돌아와
+            <br />
+            힐링할 수 있는 감성적 측면의 아이디어들 입니다. <br />
+            이 아이디어들은 리얼타임 기능을 필요로 하기 때문에, <br />
+            최근에는 Nest JS라는 프레임워크를 배우고 있고, <br />
+            필요하다면 Node나 Deno 또한 배울 생각입니다. <br />
+            <br />
+            혹시나 저의 프로젝트에 흥미가 있으시다면 <br />
+            아래 Contact 항목을 통해 저에게 알려주세요!
+          </p>
+          <a class="contactButton">Contact</a>
+        </div>
+      </section>
+
+      <section id="stacks">
+        <div class="stacksWrapper">
+          <div class="stacksHeader">
+            <h1>#Stacks</h1>
+          </div>
+          <div class="stacksList">
+            <div class="logoWrapper">
+              <div id="logo_html" class="logo"></div>
+              <span class="logoName">HTML</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_css" class="logo"></div>
+              <span class="logoName">CSS</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_scss" class="logo"></div>
+              <span class="logoName">SCSS</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_tailwind" class="logo"></div>
+              <span class="logoName">Tailwind CSS</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_js" class="logo"></div>
+              <span class="logoName">Javascript</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_ts" class="logo"></div>
+              <span class="logoName">Typescript</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_python" class="logo"></div>
+              <span class="logoName">Python</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_django" class="logo"></div>
+              <span class="logoName">Django</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_DRF" class="logo"></div>
+              <span class="logoName">Django Rest Framework</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_graphene" class="logo"></div>
+              <span class="logoName">Graphene</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_flask" class="logo"></div>
+              <span class="logoName">Flask</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_apollo" class="logo"></div>
+              <span class="logoName">Apollo</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_graphql" class="logo"></div>
+              <span class="logoName">Graphql</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_react" class="logo"></div>
+              <span class="logoName">React</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_redux" class="logo"></div>
+              <span class="logoName">Redux</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_next" class="logo"></div>
+              <span class="logoName">Next</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_nest" class="logo"></div>
+              <span class="logoName">Nest</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_docker" class="logo"></div>
+              <span class="logoName">Docker</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_nginx" class="logo"></div>
+              <span class="logoName">Nginx</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_ubuntu" class="logo"></div>
+              <span class="logoName">Ubuntu</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_flutter" class="logo"></div>
+              <span class="logoName">Flutter</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_kubernetes" class="logo"></div>
+              <span class="logoName">Kubernetes</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+            <div class="logoWrapper">
+              <div id="logo_postgresql" class="logo"></div>
+              <span class="logoName">Postgresql</span>
+              <div class="stackStatus">
+                <progress max="100"></progress>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects"></section>
+
+      <section id="contact"></section>
+
+      <footer>
+        <span>Since 2021</span>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="js/rellax.js"></script>
+  </body>
+</html>

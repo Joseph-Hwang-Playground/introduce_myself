@@ -1,0 +1,16 @@
+
+.visionWrapper .contactButton {
+    background-color: var(--highlight);
+    padding: 1rem 0;
+    font-size: x-large;
+    color: var(--white-edge);
+    font-weight: bold;
+    width: 100%;
+    margin-top: 2rem;
+    transition: all 0.2s ease;
+}
+
+.visionWrapper .contactButton:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+}

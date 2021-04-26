@@ -1,0 +1,12 @@
+@import 'reset.css';
+
+:root {
+    --white-edge:white;
+    --base: #f6f5f5;
+    --main: #145374;
+    --line: #00334e;
+    --highlight: #ee6f57;
+    --black-edge: black;
+
+	--tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}

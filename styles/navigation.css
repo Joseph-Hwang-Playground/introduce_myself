@@ -1,0 +1,37 @@
+
+nav {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#navDesktop {
+    display: none;
+}
+
+#navMobile {
+    display: flex;
+}
+
+@media screen and (min-width:640px) {
+    #navDesktop {
+        display: grid;
+    }
+    #navMobile {
+        display: none;
+    }
+}
+
+#navDesktop {
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0 1.5rem;
+}
+
+#navDesktop a {
+    padding: 1.5rem 0;
+    color: var(--base);
+    font-size: medium;
+    font-weight: 400;
+}

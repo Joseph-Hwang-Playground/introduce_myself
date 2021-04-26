@@ -1,0 +1,69 @@
+@import 'logo.css';
+@import 'status.css';
+
+
+#stacks {
+    padding-top: 10rem;
+}
+
+.stacksHeader {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--main);
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.stacksHeader h1 {
+    color: var(--base);
+}
+
+.stacksList {
+    width: 100%;
+    display: grid;
+    row-gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit,minmax(10rem, 1fr));
+}
+
+.logo {
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--white-edge);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.logoWrapper {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.logoWrapper:hover {
+    transform: scale(1.1);
+}
+
+.logoName {
+    color: gray;
+    font-size: 0;
+    transition: all 0.2s ease;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -0.5rem;
+}
+
+.logo:hover {
+    cursor: pointer;
+    box-shadow: var(--tw-shadow);
+}
+
+.logo:hover ~ .logoName {
+    font-size: 1rem;
+}
