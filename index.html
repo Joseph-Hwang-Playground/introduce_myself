@@ -19,11 +19,11 @@
     <nav id="navMobile"></nav>
 
     <nav id="navDesktop">
-      <a href="#introduction">Introduction</a>
-      <a href="#vision">Vision</a>
-      <a href="#stacks">Stacks</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a class="introduction" href="#introduction">Introduction</a>
+      <a class="vision" href="#vision">Vision</a>
+      <a class="stacks" href="#stacks">Stacks</a>
+      <a class="projects" href="#projects">Projects</a>
+      <a class="contact" href="#contact">Contact</a>
     </nav>
 
     <div id="root">
@@ -457,7 +457,49 @@
         </div>
       </section>
 
-      <section id="contact"></section>
+      <section id="contact">
+        <div class="contactWrapper">
+          <h1 class="contact__subject">#Contact</h1>
+          <div class="contact__method">
+            <div class="methodWrapper">
+              <div class="methodIcon">
+                <button
+                  class="fas fa-at btn"
+                  data-clipboard-text="joseph95501@gmail.com"
+                  onclick="emailClickAlert()"
+                ></button>
+              </div>
+              <div class="methodDescription">
+                <span>Email</span>
+              </div>
+            </div>
+            <div class="methodWrapper">
+              <div class="methodIcon">
+                <a
+                  href="https://github.com/01Joseph-Hwang10/"
+                  class="fab fa-github"
+                  target="_blank"
+                ></a>
+              </div>
+              <div class="methodDescription">
+                <span>Github</span>
+              </div>
+            </div>
+            <div class="methodWrapper">
+              <div class="methodIcon">
+                <button
+                  class="fas fa-comment btn"
+                  data-clipboard-text="joseph9550"
+                  onclick="kakaoClickAlert()"
+                ></button>
+              </div>
+              <div class="methodDescription">
+                <span>KakaoTalk</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <footer>
         <span>Since 2021</span>
@@ -465,6 +507,10 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
     <script src="js/rellax.js"></script>
+    <script src="js/clipboard.js"></script>
+    <script src="js/navBarEventHandler.js"></script>
+    <script src="js/alerts.js"></script>
   </body>
 </html>

@@ -8,30 +8,32 @@ nav {
 }
 
 #navDesktop {
-    display: none;
+    display: grid;
 }
 
-#navMobile {
+/* #navMobile {
     display: flex;
-}
+} */
 
-@media screen and (min-width:640px) {
+/* @media screen and (min-width:640px) {
     #navDesktop {
         display: grid;
     }
     #navMobile {
         display: none;
     }
-}
+} */
 
 #navDesktop {
     grid-template-columns: repeat(5, 1fr);
     padding: 0 1.5rem;
+    transition: all 0.2s ease;
 }
 
 #navDesktop a {
     padding: 1.5rem 0;
     color: var(--base);
     font-size: medium;
-    font-weight: 400;
+    font-weight: 600;
+    transition: all 0.2s ease;
 }

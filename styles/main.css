@@ -5,6 +5,7 @@
 @import 'vision/vision.css';
 @import 'stacks/stacks.css';
 @import 'projects/projects.css';
+@import 'contact/contact.css';
 
 @import 'footer.css';
 
@@ -62,7 +63,7 @@ p {
     width: 90%;
 }
 
-.stacksWrapper, .projectsWrapper {
+.stacksWrapper, .projectsWrapper, .contactWrapper {
     width: 100%;
 }
 
@@ -70,7 +71,7 @@ p {
     .introWrapper, .visionWrapper {
         width: 70%;
     }
-    .stacksWrapper, .projectsWrapper {
+    .stacksWrapper, .projectsWrapper, .contactWrapper {
         width: 80%;
     }
 }
@@ -79,7 +80,7 @@ p {
     .introWrapper, .visionWrapper {
         width: 50%;
     }
-    .stacksWrapper, .projectsWrapper {
+    .stacksWrapper, .projectsWrapper, .contactWrapper {
         width: 60%;
     }
 }
