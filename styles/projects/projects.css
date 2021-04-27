@@ -24,12 +24,68 @@
 
 .projectsList {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
-    row-gap: 1.5rem;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 1.5rem;
 }
 
 .projectItem {
     padding: 1.5rem;
     border-radius: 1.5rem;
     border: 2px solid var(--line);
+    width: 100%;
+}
+
+.projectItem__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectItem__icon a {
+    outline: none;
+    color: gray;
+    margin-top: 0.5rem;
+    font-size: large;
+    padding: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+.projectItem__icon a:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.flGlance img {
+    width: 100%;
+}
+
+.projectItem__header {
+    display: grid;
+    grid-template-columns: 1.5fr 4.5fr;
+    column-gap: 1rem;
+}
+
+.projectItem__subject {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectItem__subject div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.projectItem__subject h2 {
+    padding: 0;
+    line-height: 1.4rem;
+}
+
+.projectItem__subject h1 {
+    margin-bottom: 1rem;
 }
