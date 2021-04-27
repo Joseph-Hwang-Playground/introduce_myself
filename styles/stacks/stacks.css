@@ -3,12 +3,12 @@
 
 
 #stacks {
-    padding-top: 10rem;
+    padding-bottom: 5rem;
 }
 
 .stacksHeader {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     padding: 0.5rem 1rem;
     background-color: var(--main);
@@ -20,6 +20,80 @@
 
 .stacksHeader h1 {
     color: var(--base);
+}
+
+.stacksHeader .dropdown-button {
+    font-size: xx-large;
+    color: var(--base);
+    transition: all 0.2s ease;
+}
+
+.stacksHeader .dropdown-button:hover {
+    transform: scale(1.2);
+    filter: brightness(1.1);
+}
+
+.stacksHeader__infoWrapper {
+    position: relative;
+}
+
+.stacksHeader__info {
+    display: none;
+    pointer-events: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    top: 2.5rem;
+    right: -1.5rem;
+    background-color: var(--base);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: var(--tw-shadow);
+    z-index: 7;
+}
+
+@keyframes growDown {
+    0% {
+      transform: scaleY(0)
+    }
+  
+    80% {
+      transform: scaleY(1.1)
+    }
+  
+    100% {
+      transform: scaleY(1)
+    }
+}
+
+.stacksHeader__infoWrapper .dropdown-button:hover ~ .stacksHeader__info {
+    display: flex;
+}
+
+.dropdown-main {
+    animation: growDown 0.3s ease-in-out forwards;
+    transform-origin: top center;
+}
+
+.stacksHeader__info__subject {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+.stacksHeader__info__level {
+    padding: 1rem;
+    border-bottom: 1px solid gray;
+}
+
+
+.stacksHeader__info__level progress {
+    margin-bottom: 0.25rem;
+}
+
+.stacksHeader__info__level:last-child {
+    border-bottom: none;
 }
 
 .stacksList {
@@ -64,7 +138,6 @@
 }
 
 .logoWrapper:hover .logo {
-    cursor: pointer;
     box-shadow: var(--tw-shadow);
 }
 

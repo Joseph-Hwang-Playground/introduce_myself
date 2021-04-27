@@ -14,3 +14,7 @@
     cursor: pointer;
     filter: brightness(1.1);
 }
+
+#vision {
+    padding-bottom: 10rem;
+}

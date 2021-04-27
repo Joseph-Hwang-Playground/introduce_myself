@@ -113,7 +113,37 @@
         <div class="stacksWrapper">
           <div class="stacksHeader">
             <h1>#Stacks</h1>
+
+            <div class="stacksHeader__infoWrapper">
+              <div class="fas fa-info-circle dropdown-button"></div>
+
+              <div class="stacksHeader__info dropdown-main">
+                <div class="stacksHeader__info__subject">숙련도</div>
+
+                <div class="stacksHeader__info__level">
+                  <progress max="100" value="0"></progress>
+                  <span>아예 모름</span>
+                </div>
+                <div class="stacksHeader__info__level">
+                  <progress max="100" value="10"></progress>
+                  <span>배워가는 중</span>
+                </div>
+                <div class="stacksHeader__info__level">
+                  <progress max="100" value="50"></progress>
+                  <span>내 프로젝트에 적용 가능한 수준</span>
+                </div>
+                <div class="stacksHeader__info__level">
+                  <progress max="100" value="75"></progress>
+                  <span>꽤 자신 있음</span>
+                </div>
+                <div class="stacksHeader__info__level">
+                  <progress max="100" value="100"></progress>
+                  <span>어디가서 이거 좀 해봤다고 말할 수 있는 수준</span>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div class="stacksList">
             <div class="logoWrapper">
               <button id="logo_html" class="logo"></button>
@@ -303,7 +333,33 @@
         </div>
       </section>
 
-      <section id="projects"></section>
+      <section id="projects">
+        <div class="projectsWrapper">
+          <div class="projectsHeader">
+            <h1>#Projects</h1>
+          </div>
+
+          <div class="projectsList">
+            <div class="projectItem">
+              <div class="projectItem__header">
+                <div class="projectItem__icon"></div>
+                <div class="projectItem__subject"></div>
+              </div>
+              <div class="projectItem__description"></div>
+            </div>
+            <div class="projectItem">
+              <div class="projectItem__header">
+                <div class="projectItem__icon"></div>
+                <div class="projectItem__subject"></div>
+              </div>
+              <div class="projectItem__description"></div>
+            </div>
+            <div class="projectItem">
+              <div class="projectItem__description"></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section id="contact"></section>
 

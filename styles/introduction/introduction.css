@@ -19,32 +19,6 @@
     align-items: flex-start;
 }
 
-.introWrapper, .visionWrapper {
-    width: 90%;
-}
-
-.stacksWrapper {
-    width: 100%;
-}
-
-@media screen and (min-width:640px) {
-    .introWrapper, .visionWrapper {
-        width: 70%;
-    }
-    .stacksWrapper {
-        width: 80%;
-    }
-}
-
-@media screen and (min-width:1024px) {
-    .introWrapper, .visionWrapper {
-        width: 50%;
-    }
-    .stacksWrapper {
-        width: 60%;
-    }
-}
-
 .statusBar {
     padding: 1rem;
     margin-top: 2rem;
