@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    padding-bottom: 5rem;
 }
 
 .projectsHeader {
@@ -86,6 +87,25 @@
     line-height: 1.4rem;
 }
 
+.projectItem__description h2 {
+    color: teal;
+}
+
 .projectItem__subject h1 {
     margin-bottom: 1rem;
+}
+
+.mypy .icon_canvas {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    padding: 1rem;
+    width: 8rem;
+    height: 8rem;
+    font-size: xx-large;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
