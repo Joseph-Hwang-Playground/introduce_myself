@@ -2,7 +2,7 @@
 
 .stackStatus {
     position: absolute;
-    bottom: -3rem;
+    bottom: -4rem;
     width: 10rem;
     height: 2.5rem;
     display: none;
@@ -10,9 +10,21 @@
     background-color: white;
     border-radius: 0.5rem;
     box-shadow: var(--tw-shadow);
-    z-index: 3;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logoWrapper:hover .stackStatus {
+    display: flex;
 }
 
 .stackStatus progress {
     width: 100%;
+}
+
+.stackStatus span {
+    text-align: center;
+    color: gray;
+    margin-bottom: 0.25rem;
 }

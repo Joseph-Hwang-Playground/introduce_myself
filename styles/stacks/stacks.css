@@ -42,7 +42,7 @@
     justify-content: start;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    /* position: relative; */
     transition: all 0.2s ease;
 }
 
@@ -59,11 +59,15 @@
     margin-bottom: -0.5rem;
 }
 
-.logo:hover {
+.logoWrapper:hover .logoName {
+    font-size: 1rem;
+}
+
+.logoWrapper:hover .logo {
     cursor: pointer;
     box-shadow: var(--tw-shadow);
 }
 
-.logo:hover ~ .logoName {
+.logoWrapper:hover .logoName {
     font-size: 1rem;
 }
