@@ -4,6 +4,7 @@ footer {
     padding: 5rem 0;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     background-color: var(--line);
     position: relative;
