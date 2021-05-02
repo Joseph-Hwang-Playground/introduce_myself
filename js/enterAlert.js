@@ -1,5 +1,5 @@
 
-window.onload(()=>{
+window.onload = () => {
     const screenWidthCondition = 'screen and (min-width: 640px)';
     if ( !window.matchMedia(screenWidthCondition) ) {
         alert(
@@ -9,4 +9,4 @@ window.onload(()=>{
             `
         )
     }
-})
+}
