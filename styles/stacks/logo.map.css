@@ -1,0 +1,125 @@
+
+
+.logo {
+    background-position: center;
+    background-size: 5.5rem;
+    background-repeat: no-repeat;
+}
+
+#logo_html {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg');
+}
+
+#logo_css {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg');
+    background-size: 4rem;
+}
+
+#logo_js {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png');
+}
+
+#logo_ts {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg');
+}
+
+#logo_scss {
+    background-image: url('https://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg');
+}
+
+#logo_tailwind {
+    background-image: url('https://tailwindcss.com/_next/static/media/tailwindcss-mark.cb8046c163f77190406dfbf4dec89848.svg');
+}
+
+#logo_python {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg');
+}
+
+#logo_django {
+    background-image: url('https://static.djangoproject.com/img/logos/django-logo-positive.svg');
+}
+
+#logo_DRF {
+    background-image: url('https://www.django-rest-framework.org/img/logo.png');
+    background-size: 9rem;
+}
+
+#logo_flask {
+    background-image: url('https://flask.palletsprojects.com/en/2.0.x/_images/flask-logo.png');
+}
+
+#logo_apollo {
+    background-image: url('https://user-images.githubusercontent.com/841294/53402609-b97a2180-39ba-11e9-8100-812bab86357c.png');
+    background-size: 7.5rem;
+}
+
+#logo_graphql {
+    background-image: url('https://graphql.org/img/brand/logos/logo.svg');
+}
+
+#logo_react {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg');
+    background-size: 9rem;
+}
+
+#logo_redux {
+    background-image: url('https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.svg');
+}
+
+#logo_next {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg');
+}
+
+#logo_nest {
+    background-image: url('https://docs.nestjs.com/assets/logo-small.svg');
+}
+
+#logo_docker {
+    background-image: url('https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png');
+}
+
+#logo_nginx {
+    background-image: url('https://www.nginx.com/wp-content/uploads/2020/05/NGINX-product-icon.svg');
+}
+
+#logo_ubuntu {
+    background-image: url('https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png');
+}
+
+#logo_flutter {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/17/Google-flutter-logo.png');
+    background-size: 7.5rem;
+}
+
+#logo_postgresql {
+    background-image: url('https://wiki.postgresql.org/images/a/a4/PostgreSQL_logo.3colors.svg');
+}
+
+#logo_svelte {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg');
+}
+
+#logo_vue {
+    background-image: url('https://vuejs.org/images/logo.svg');
+}
+
+#logo_electron {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/91/Electron_Software_Framework_Logo.svg');
+}
+
+#logo_express {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png');
+    background-size: 8rem;
+}
+
+#logo_webcomponents {
+    background-image: url('https://web-components-resources.appspot.com/static/logo.svg');
+}
+
+#logo_go {
+    background-image: url('https://golang.org/lib/godoc/images/go-logo-blue.svg');
+}
+
+#logo_aws {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg');
+}

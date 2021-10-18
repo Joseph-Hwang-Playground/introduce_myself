@@ -2,22 +2,22 @@ const HIGHLIGHT = '#ee6f57'
 
 const rem = parseInt(getComputedStyle(document.documentElement).fontSize)
 
-document.addEventListener('scroll', () => {
+const navBarEventHandler = () => {
 
-    const navigation = document.querySelector('#navDesktop');
+    const navigation = document.querySelector<HTMLElement>('#navDesktop');
     const navTopPos = window.scrollY
     
-    const introduction = navigation.querySelector('.introduction')
-    const vision = navigation.querySelector('.vision')
-    const stacks = navigation.querySelector('.stacks')
-    const projects = navigation.querySelector('.projects')
-    const contact = navigation.querySelector('.contact')
+    const introduction = navigation.querySelector<HTMLElement>('.introduction')
+    const vision = navigation.querySelector<HTMLElement>('.vision')
+    const stacks = navigation.querySelector<HTMLElement>('.stacks')
+    const projects = navigation.querySelector<HTMLElement>('.projects')
+    const contact = navigation.querySelector<HTMLElement>('.contact')
     
-    const introductionElement = document.querySelector('#introduction');
-    const visionElement = document.querySelector('#vision');
-    const stacksElement = document.querySelector('#stacks');
-    const projectsElement = document.querySelector('#projects');
-    const contactElement = document.querySelector('#contact');
+    const introductionElement = document.querySelector<HTMLElement>('#introduction');
+    const visionElement = document.querySelector<HTMLElement>('#vision');
+    const stacksElement = document.querySelector<HTMLElement>('#stacks');
+    const projectsElement = document.querySelector<HTMLElement>('#projects');
+    const contactElement = document.querySelector<HTMLElement>('#contact');
     
     const introductionTopPos = introductionElement.offsetTop - ( 9 * rem ) ;
     const visionTopPos = visionElement.offsetTop - ( 9 * rem ) ;
@@ -87,5 +87,7 @@ document.addEventListener('scroll', () => {
         projects.style.color = 'white';
         contact.style.color = 'white';
     }
-})
+};
+
+export default navBarEventHandler;
 

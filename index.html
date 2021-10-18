@@ -15,6 +15,8 @@
     />
     <title>현규의 자기소개 페이지</title>
 
+    <script defer src="https://unpkg.com/petite-vue"></script>
+    <script defer src="https://unpkg.com/@webcomponents/custom-elements/src/native-shim.js"></script>
     <script
       defer
       src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"
@@ -23,26 +25,11 @@
       defer
       src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"
     ></script>
-    <script defer src="js/rellax.js"></script>
-    <script defer src="js/clipboard.js"></script>
-    <script defer src="js/navBarEventHandler.js"></script>
-    <script defer src="js/alerts.js"></script>
-    <script defer src="js/enterAlert.js"></script>
-    <script defer src="js/components/paragraph.js"></script>
-    <script defer type="module" src="js/vue/status-item.js"></script>
-    <script defer type="module" src="js/vue/level-legend.js"></script>
-    <script defer type="module" src="js/vue/stack-icon.js"></script>
-    <script defer type="module">
-      import { createApp } from 'https://unpkg.com/petite-vue?module';
-      import { StatusItem } from './js/vue/status-item.js';
-      import { LevelLegend } from './js/vue/level-legend.js';
-      import { StackIcon } from './js/vue/stack-icon.js';
-      createApp({
-        StackIcon,
-        LevelLegend,
-        StatusItem,
-      }).mount();
-    </script>
+    <script defer src="res/aux/rellax.js"></script>
+    <script defer src="res/aux/clipboard.js"></script>
+    <script defer src="res/aux/alerts.js"></script>
+    <script defer src="res/aux/enterAlert.js"></script>
+    <script defer src="res/index.js"></script>
   </head>
   <body>
     <nav id="navDesktop">
@@ -64,8 +51,12 @@
         <div class="introWrapper">
           <h1>#Introduction</h1>
           <h2>Hello, my name is 황현규!</h2>
-          <formatted-p key="introduction" />
-          <div class="statusBar"></div>
+          <formatted-p key="introduction"></formatted-p>
+          <div class="statusBar">
+            <div class="statusItem" v-scope="StatusItem('user')"></div>
+            <div class="statusItem" v-scope="StatusItem('university')"></div>
+            <div class="statusItem" v-scope="StatusItem('info')"></div>
+          </div>
         </div>
       </section>
 
@@ -73,7 +64,7 @@
         <div class="visionWrapper">
           <h1>#Ideas</h1>
           <h2>"Please contact me if you're interested, feel free to give me any feedback!"</h2>
-          <formatted-p key="ideas" />
+          <formatted-p key="ideas"></formatted-p>
           <a class="contactButton" href="#contact">Contact</a>
         </div>
       </section>
@@ -88,11 +79,47 @@
 
               <div class="stacksHeader__info dropdown-main" id="level-legend">
                 <div class="stacksHeader__info__subject">Confidence</div>
+
+                <div class="stacksHeader__info__level" v-scope="LevelLegend('l1')"></div>
+                <div class="stacksHeader__info__level" v-scope="LevelLegend('l2')"></div>
+                <div class="stacksHeader__info__level" v-scope="LevelLegend('l3')"></div>
+                <div class="stacksHeader__info__level" v-scope="LevelLegend('l4')"></div>
+                <div class="stacksHeader__info__level" v-scope="LevelLegend('l5')"></div>
               </div>
             </div>
           </div>
 
-          <div class="stacksList" id="stacksList"></div>
+          <div class="stacksList" id="stacksList">
+            <div class="logoWrapper" v-scope="StackIcon('javascript')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('typescript')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('python')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('go')"></div>
+
+            <div class="logoWrapper" v-scope="StackIcon('scss')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('tailwind')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('react')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('redux')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('apollo')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('next')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('vue')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('svelte')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('webcomponents')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('reactNative')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('flutter')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('electron')"></div>
+
+            <div class="logoWrapper" v-scope="StackIcon('django')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('drf')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('flask')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('nest')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('express')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('graphql')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('postgresql')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('docker')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('nginx')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('ubuntu')"></div>
+            <div class="logoWrapper" v-scope="StackIcon('aws')"></div>
+          </div>
         </div>
       </section>
 
@@ -103,114 +130,8 @@
           </div>
 
           <div class="projectsList">
-            <div class="projectItem flGlance">
-              <div class="projectItem__header">
-                <div class="projectItem__icon mypy">
-                  <div class="icon_canvas">Fg</div>
-                </div>
-                <div class="projectItem__subject">
-                  <div>
-                    <h1>Start the project, Share the workflow</h1>
-                    <h2>Plan, Organize, Manage the project</h2>
-                    <h2>Share your workflow, and inspired by the others'</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="projectItem__description">
-                <h2>"일단 뭐라도 만들어보자"</h2>
-                <p>
-                  이 앱은 코딩을 배우면서 "다른 사람들은 과연 나처럼 작업을
-                  할까??" 라는 궁금증에서 시작되었습니다. <br />
-                  다른 사람의 작업흐름에서 영감을 받아 나의 작업 능력을 향상시킬
-                  수 있도록 하는 앱이 있다면 어떨까 하는 일념하에 만들었던
-                  것입니다. <br />
-                  <br />
-                  하지만 처음 해보는 프로젝트였기에, <br />
-                  계획적이지도 않았고 그냥 무작정 앞으로만 달려나가는 식으로
-                  프로젝트를 진행했던 기억이 납니다 <br />
-                  <br />
-                  코딩에서 생기는 오류도 있었지만, <br />
-                  앱 설계라든지, 디자인이라든지, 타겟 시장의 설정이나
-                  수요조사라든지, <br />
-                  여러 면에서 부족했던 프로젝트였습니다 <br />
-                  <br />
-                  하지만 이 프로젝트는 저의 전체적인 프로그래밍 실력을 많이
-                  향상시켜준 프로젝트였습니다. <br />
-                  <br />
-                  수많은 오류에 부딪혀 가면서 <br />
-                  "아 이렇게 하면 안되는 거구나", "이렇게 하면 작업을 빨리 할 수
-                  있겠구나" <br />
-                  등의 값진 암묵지, 경험을 얻었습니다. <br />
-                  <br />
-                  그렇기에 저는 이 프로젝트를 포기하지 않고 <br />
-                  끝까지 진행해 보았다는 것에 의의를 두고 뿌듯해 하고 있습니다.
-                </p>
-              </div>
-            </div>
-
-            <div class="projectItem">
-              <div class="projectItem__header">
-                <div class="projectItem__icon mypy">
-                  <div class="icon_canvas">MYPY</div>
-                </div>
-                <div class="projectItem__subject">
-                  <div>
-                    <h1>MYPY: Python app everywhere!</h1>
-                    <h2>MYPY serves your python app online!</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="projectItem__description">
-                <h2>"정말 갑작스럽게 만들어보고 싶었던 아이디어"</h2>
-                <p>
-                  UNIST 학생이라면 잘 알겠지만, <br />
-                  굉장히 산속 깊숙히 위치하고 있고, 인프라가 정말 열악합니다.
-                  <br />
-                  <br />
-                  하루는 학교에 있는 것이 너무 답답해서, <br />
-                  기차를 타고 집에 가고 싶었습니다. <br />
-                  집이 전주인데, 아실 분들은 아시겠지만 울산에서 전주까지 바로
-                  가는 기차는 없습니다. <br />
-                  그래서 파이썬으로 기차의 출발시간, 도착시간을 크롤링 해서
-                  <br />
-                  울산에서 전주로 갈 수 있는 가장 효율적인 기차편을 알려주는
-                  프로그램을 만들어보고자 했습니다<br />
-                  <br />
-                  문제가 하나 있었는데, 이 프로그램은 제가 컴퓨터를 키고 파이선
-                  인터프리터를 열어서 실행시켜야 했습니다. <br />
-                  이 앱을 휴대폰이나 다른 데스크톱에서 이용하려면 <br />
-                  플라스크와 같은 프레임워크를 바탕으로 웹에 배포를 해야
-                  어디서든 이용할 수 있는 불편함이 있었습니다. <br />
-                  <br />
-                  "이런 비교적 단순한 프로그램들을 어디서든 이용할 수 있게 할
-                  수는 없을까?" 하는 생각에 시작한 것이 <br />
-                  MYPY 프로젝트입니다. <br />
-                  <br />
-                  현재 개발단계에 있고, 일단 최종적인 목표는 파이선 프로그램을
-                  압축파일로 올리면, <br />
-                  input 명령어를 컴파일해 프론트엔드 UI로 바꿔줘 UI 구현 없이도
-                  진짜 앱처럼 만들고, <br />
-                  어디서든 인터넷만 있다면 실행할 수 있도록 하는 것입니다.
-                  <br />
-                  <br />
-                  현재 60% 정도 진행되고 있습니다.
-                </p>
-              </div>
-            </div>
-
-            <div class="projectItem">
-              <div class="projectItem__description">
-                <h2>"아직 실현시켜보고 싶은 수많은 아이디어들...!"</h2>
-                <p>
-                  사실 저는 제가 다는 학교가 과제가 너무 많은게 싫습니다. <br />
-                  저의 아이디어를 실현할 시간을 뺏어가거든요. <br />
-                  <br />
-                  아직 실현시켜보고 싶은 아이디어가 꽤 많이 제 머릿속에서
-                  맴돕니다. <br />
-                  방학이 되면 한번 제대로 불태워볼 생각입니다. <br />
-                </p>
-              </div>
-            </div>
+            <div class="projectItem" v-scope="ProjectCard('fg')"></div>
+            <div class="projectItem" v-scope="ProjectCard('mypy')"></div>
           </div>
         </div>
       </section>
@@ -219,42 +140,30 @@
         <div class="contactWrapper">
           <h1 class="contact__subject">#Contact</h1>
           <div class="contact__method">
-            <div class="methodWrapper">
-              <div class="methodIcon">
-                <button
-                  class="fas fa-at btn"
-                  data-clipboard-text="joseph95501@gmail.com"
-                  onclick="emailClickAlert()"
-                ></button>
-              </div>
-              <div class="methodDescription">
-                <span>Email</span>
-              </div>
-            </div>
-            <div class="methodWrapper">
-              <div class="methodIcon">
-                <a
-                  href="https://github.com/01Joseph-Hwang10/"
-                  class="fab fa-github"
-                  target="_blank"
-                ></a>
-              </div>
-              <div class="methodDescription">
-                <span>Github</span>
-              </div>
-            </div>
-            <div class="methodWrapper">
-              <div class="methodIcon">
-                <button
-                  class="fas fa-comment btn"
-                  data-clipboard-text="joseph9550"
-                  onclick="kakaoClickAlert()"
-                ></button>
-              </div>
-              <div class="methodDescription">
-                <span>KakaoTalk</span>
-              </div>
-            </div>
+            <contact-button description="Email">
+              <button
+                slot="icon"
+                class="fas fa-at btn"
+                data-clipboard-text="joseph95501@gmail.com"
+                onclick="emailClickAlert()"
+              ></button>
+            </contact-button>
+            <contact-button description="Github">
+              <a
+                slot="icon"
+                href="https://github.com/01Joseph-Hwang10/"
+                class="fab fa-github"
+                target="_blank"
+              ></a>
+            </contact-button>
+            <contact-button description="Kakaotalk">
+              <button
+                slot="icon"
+                class="fas fa-comment btn"
+                data-clipboard-text="joseph9550"
+                onclick="kakaoClickAlert()"
+              ></button>
+            </contact-button>
           </div>
         </div>
       </section>

@@ -1,4 +1,4 @@
-@import 'logo.css';
+@import 'logo.map.css';
 @import 'status.css';
 
 
@@ -132,6 +132,7 @@
     position: absolute;
     bottom: 0;
     margin-bottom: -0.5rem;
+    text-align: center;
 }
 
 .logoWrapper:hover .logoName {

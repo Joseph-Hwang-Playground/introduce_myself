@@ -1,12 +1,6 @@
-
-#contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5rem;
-    padding-bottom: 20rem;
-}
-
+const template = document.createElement('template');
+template.innerHTML = `
+<style>
 .methodWrapper {
     display: flex;
     padding: 1.5rem;
@@ -34,27 +28,6 @@
     align-items: center;
 }
 
-.contactWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    width: 100%;
-}
-
-.contact__subject {
-    text-align: center;
-    color: var(--black-edge);
-    margin-bottom: 1.5rem;
-}
-
-.contact__method {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-}
-
 .methodIcon a, .methodIcon button {
     font-size: 3rem;
     padding: 1rem;
@@ -67,4 +40,23 @@
     transform: scale(1.2);
     filter: grayscale(0.5);
 }
+</style>
+<div class="methodWrapper">
+    <div class="methodIcon">
+        <slot name="icon" />
+    </div>
+    <div class="methodDescription">
+        <span></span>
+    </div>
+</div>
+`
 
+export class ContactMethodButton extends HTMLElement {
+    constructor() {
+        super();
+
+        this.attachShadow({ mode: 'open' });
+        this.shadowRoot.appendChild(template.content.cloneNode(true));
+        this.shadowRoot.querySelector('span').innerText = this.getAttribute('description');
+    }
+}
