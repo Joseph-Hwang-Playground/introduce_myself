@@ -9,9 +9,19 @@
     "compile": "tsc",
     "bundle": "webpack",
     "build": "tsc && webpack",
-    "dev": "tsc-watch --outDir ./dist --onSuccess 'webpack'"
+    "dev": "gulp & tsc-watch --outDir ./dist --onSuccess 'webpack'",
+    "css": "gulp"
   },
   "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssimport": "^7.0.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.0.0",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.3.9",
     "tsc-watch": "^4.5.0",
     "typescript": "^4.4.4",
     "webpack": "^5.58.2",

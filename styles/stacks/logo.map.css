@@ -97,6 +97,7 @@
 
 #logo_svelte {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg');
+    background-size: 4.5rem;
 }
 
 #logo_vue {

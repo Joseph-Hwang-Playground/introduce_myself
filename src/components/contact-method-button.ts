@@ -28,14 +28,14 @@ template.innerHTML = `
     align-items: center;
 }
 
-.methodIcon a, .methodIcon button {
+.methodIcon * {
     font-size: 3rem;
     padding: 1rem;
     color: var(--highlight);
     transition: all 0.2s ease;
 }
 
-.methodIcon a:hover, .methodIcon button:hover {
+.methodIcon *:hover {
     cursor: pointer;
     transform: scale(1.2);
     filter: grayscale(0.5);

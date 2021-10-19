@@ -14,5 +14,5 @@ module.exports = {
       "@src": path.resolve(__dirname, 'dist'),
       "@res": path.resolve(__dirname, 'res'),
     },
-  }
+  },
 };
