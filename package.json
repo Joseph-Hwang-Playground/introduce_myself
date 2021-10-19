@@ -6,11 +6,8 @@
   "author": "01Joseph-Hwang10 <joseph95501@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "compile": "tsc",
-    "bundle": "webpack",
-    "build": "tsc && webpack",
-    "dev": "gulp & tsc-watch --outDir ./dist --onSuccess 'webpack'",
-    "css": "gulp"
+    "build": "gulp build && tsc && webpack",
+    "dev": "gulp dev & tsc-watch --outDir ./dist --onSuccess 'webpack'"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.7",

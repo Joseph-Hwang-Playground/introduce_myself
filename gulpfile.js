@@ -6,7 +6,7 @@ const process = (filename) => () => {
     const sass = require("gulp-sass")(require("node-sass"));
     const minify = require("gulp-csso");
     return gulp
-        .src(filename ? `styles/${filename}.css` : 'styles/**/*.css')
+        .src(filename ? `styles/${filename}.css` : 'styles/**/*')
         .pipe(cssimport())
         .pipe(sass().on("error", sass.logError))
         .pipe(postCSS([
@@ -22,4 +22,6 @@ gulp.task('css', gulp.parallel([process('main'), process('fonts'), process('glob
 const watch = () => gulp.watch('styles/*.css', gulp.series(['css']));
 gulp.task('watch', watch);
 
-gulp.task('default', gulp.series(['css', 'watch']))
+gulp.task('dev', gulp.series(['css', 'watch']))
+
+gulp.task('build', gulp.series(['css']))

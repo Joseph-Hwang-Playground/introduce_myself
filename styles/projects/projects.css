@@ -80,7 +80,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .projectItem__subject h2 {
@@ -93,6 +93,7 @@
 }
 
 .projectItem__subject h1 {
+    padding: 0;
     margin-bottom: 1rem;
 }
 

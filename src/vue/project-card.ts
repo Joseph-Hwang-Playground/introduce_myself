@@ -1,6 +1,6 @@
 import { objects } from "@src/values/objects";
 
-const template = `
+const generateTemplate = (descriptionKey: string) => `
 <div class="projectItem__header">
     <div class="projectItem__icon mypy">
         <div class="icon_canvas">{{ name }}</div>
@@ -13,8 +13,8 @@ const template = `
     </div>
 </div>
 <div class="projectItem__description">
-    <h2>"{{ summary }}"</h2>
-    <formatted-p v-bind:key="descriptionKey"></formatted-p>
+    <h2 v-if="summary">"{{ summary }}"</h2>
+    <formatted-p v-if="descriptionKey" key="${descriptionKey}"></formatted-p>
 </div>
 `;
 
@@ -22,8 +22,8 @@ export interface ProjectCardProps {
     name: string;
     title: string;
     subtitles: string[];
-    summary: string;
-    descriptionKey: string;
+    summary: string | null;
+    descriptionKey: string | null;
 }
 
 export const ProjectCard = (key: string) => {
@@ -35,7 +35,7 @@ export const ProjectCard = (key: string) => {
         descriptionKey,
     }: ProjectCardProps = objects.projectCard[key];
     return {
-        $template: template,
+        $template: generateTemplate(descriptionKey),
         name,
         title,
         subtitles,

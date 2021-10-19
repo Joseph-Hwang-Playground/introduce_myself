@@ -5,7 +5,7 @@
 @import 'vision/vision.css';
 @import 'stacks/stacks.css';
 @import 'projects/projects.css';
-@import 'contact/contact.css';
+@import 'contact/contact.scss';
 
 @import 'footer.css';
 

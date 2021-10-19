@@ -5,7 +5,7 @@ template.innerHTML = `
     display: flex;
     padding: 1.5rem;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     border: 2px solid var(--line);
     border-radius: 1.5rem;
@@ -24,26 +24,14 @@ template.innerHTML = `
 .methodDescription {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
-
-.methodIcon * {
-    font-size: 3rem;
-    padding: 1rem;
-    color: var(--highlight);
-    transition: all 0.2s ease;
-}
-
-.methodIcon *:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-    filter: grayscale(0.5);
-}
 </style>
+
 <div class="methodWrapper">
     <div class="methodIcon">
-        <slot name="icon" />
+        <slot></slot>
     </div>
     <div class="methodDescription">
         <span></span>

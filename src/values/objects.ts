@@ -26,8 +26,58 @@ export const objects: ObjectRes = {
             name: "Mypy",
             title: "MYPY: Python app everywhere!",
             subtitles: ['MYPY serves your python app online!'],
-            summary: "I thought this idea is quite awesome...",
+            summary: "I think this idea is quite awesome...",
             descriptionKey: 'projectMypy',
+        },
+        ctb: {
+            name: "❤️",
+            title: "커플되는 부적",
+            subtitles: [],
+            summary: "Just For Fun",
+            descriptionKey: 'projectCTB',
+        },
+        erin: {
+            name: "Erin",
+            title: "Erin: Interactive letter editor",
+            subtitles: [
+                "Make your letter alive!"
+            ],
+            summary: "Inspired by a love letter",
+            descriptionKey: 'projectErin',
+        },
+        timer: {
+            name: "⌚️",
+            title: "Simple Timer",
+            subtitles: [],
+            summary: "Seriously?",
+            descriptionKey: "projectTimer",
+        },
+        tb: {
+            name: "TB",
+            title: "Working on Tripbuilder",
+            subtitles: [
+                'position: FE developer'
+            ],
+            summary: null,
+            descriptionKey: null,
+        },
+        labis: {
+            name: "LabIs",
+            title: "Working on LabIs",
+            subtitles: [
+                'position: FE developer',
+            ],
+            summary: null,
+            descriptionKey: null,
+        },
+        gf: {
+            name: "GF",
+            title: "Golden Friends",
+            subtitles: [
+                'position: CTO',
+            ],
+            summary: null,
+            descriptionKey: null,
         },
     },
     statusItem: {
@@ -41,7 +91,7 @@ export const objects: ObjectRes = {
         },
         info: {
             icon: 'fa-info-circle',
-            value: 'Born at 2002',
+            value: 'Music and photo as a hobby',
         },
     },
     levelLegend: {
