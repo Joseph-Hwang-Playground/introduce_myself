@@ -42,7 +42,7 @@
     display: none;
     pointer-events: none;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     position: absolute;
     top: 2.5rem;
@@ -114,7 +114,7 @@
 
 .logoWrapper {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     /* position: relative; */
