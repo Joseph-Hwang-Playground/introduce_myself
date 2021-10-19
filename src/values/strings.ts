@@ -91,7 +91,7 @@ const projectMypy = [
 
 const projectCTB = [
     'This was just for fun',
-    'For those who don\'t speak korean, couple_duaneun_bujuck means "A tailsman that makes you a lover"',
+    'For those who don\'t speak korean, 커플 되는 부적 means "A tailsman that makes you a lover"',
     'Link down below is a link for the website',
     '',
     '<a href="https://01joseph-hwang10.github.io/couple_duaneun_bujuck/" >https://01joseph-hwang10.github.io/couple_duaneun_bujuck/</a>',
