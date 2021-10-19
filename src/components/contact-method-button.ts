@@ -3,8 +3,9 @@ template.innerHTML = `
 <style>
 .methodWrapper {
     display: flex;
-    padding: 1.5rem;
     flex-direction: column;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     justify-content: flex-start;
     align-items: center;
     border: 2px solid var(--line);
