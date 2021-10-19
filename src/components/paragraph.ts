@@ -11,6 +11,8 @@ p {
     color: var(--black-edge);
     font-weight: bold;
     color: darkslategray;
+    padding-right: 2px;
+    padding-left: 2px;
 }
 strong {
     font-family: 'Nanum Gothic', sans-serif;
@@ -19,6 +21,11 @@ strong {
     line-height: 1.1rem;
     color: var(--black-edge);
     font-weight: bolder;
+}
+@media screen and (min-width:640px) {
+    p {
+        padding: 0;
+    }
 }
 </style>
 <p></p>
