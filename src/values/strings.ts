@@ -40,6 +40,7 @@ const ideas = [
     "The problem of this idea is that ideas cannot be protected. ",
     "I thought about NFT to make the idea really unique, and firms, startups, or individual can buy it.",
     "But this does not really protects it, and it needs some protection with law. ",
+    "",
     "**## And more...!/**",
     "I\'ve done every project alone, so I easily exausted and eventually stopped progressing materializing my ideas.",
     "Stopped personal projects are on projects section, so check it out.",
