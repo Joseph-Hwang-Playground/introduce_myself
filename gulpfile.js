@@ -3,7 +3,7 @@ const cssimport = require('gulp-cssimport');
 
 const process = (filename) => () => {
     const postCSS = require("gulp-postcss");
-    const sass = require("gulp-sass")(require("node-sass"));
+    const sass = require("gulp-sass")(require("sass"));
     const minify = require("gulp-csso");
     return gulp
         .src(filename ? `styles/${filename}.css` : 'styles/**/*')

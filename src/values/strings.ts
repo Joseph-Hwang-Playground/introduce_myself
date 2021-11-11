@@ -73,6 +73,8 @@ const projectFg = [
     '',
     '<a href="https://github.com/01Joseph-Hwang10/To-Do_Glass" >https://github.com/01Joseph-Hwang10/To-Do_Glass</a>',
     '',
+    'Stacks: React, Redux, TailwindCSS, Django, Django Rest Framework, Nginx, EC2, Docker',
+    '',
     '(BTW, I\'ve changed its name from To Do Glass to FLGlance)',
 ];
 
@@ -88,6 +90,8 @@ const projectMypy = [
     'Source code is down below, but that code really needs some enhancement (e.g. code cleaning, js to ts, python type hint, etc...)',
     '',
     '<a href="https://github.com/01Joseph-Hwang10/mypy" >https://github.com/01Joseph-Hwang10/mypy</a>',
+    '',
+    'Stacks: React, Redux, SCSS, Flask, Django, Django Rest Framework',
 ];
 
 const projectCTB = [
@@ -95,7 +99,9 @@ const projectCTB = [
     'For those who don\'t speak korean, 커플 되는 부적 means "A tailsman that makes you a lover"',
     'Link down below is a link for the website',
     '',
-    '<a href="https://01joseph-hwang10.github.io/couple_duaneun_bujuck/" >https://01joseph-hwang10.github.io/couple_duaneun_bujuck/</a>',
+    '<a href="https://01joseph-hwang10.github.io/couple_duaneun_bujuck/" >https://01joseph-hwang10.github.io/couple_duaneun_bujuck/</a>',,
+    '',
+    'Stacks: HTML/CSS/JS',
 ]
 
 const projectErin = [
@@ -109,6 +115,8 @@ const projectErin = [
     'If you\'re interested in, please let me know!',
     '',
     '<a href="https://github.com/01Joseph-Hwang10/erin_app" >https://github.com/01Joseph-Hwang10/erin_app</a>',
+    '',
+    'Stacks: React Native, Redux, Typescript',
 ]
 
 const timer = [
@@ -122,6 +130,49 @@ const timer = [
     'If you want a deployed version of this, please let me know!',
     '',
     '<a href="https://github.com/01Joseph-Hwang10/electron_practice/tree/master/simple-timer-app-svelte">https://github.com/01Joseph-Hwang10/electron_practice/tree/master/simple-timer-app-svelte</a>',
+    '',
+    'Stacks: Svelte, Electron, SCSS, TailwindCSS, Typescript'
+]
+
+const buxHexa = [
+    'This project is held on HeXA, the only CS club in UNIST.',
+    '',
+    'The website below simply shows the bus timetable of UNIST',
+    '',
+    '<a href="http://t.hexa.pro:8014/busno/">http://t.hexa.pro:8014/busno/</a>',
+    '',
+    'Stacks: Vue(Petite-Vue), Web Components, Django, Typescript'
+]
+
+const tripbuilder = [
+    'STTI survey web(Mobile Optimized)',
+    '<a href="https://stti.tripbuilder.co.kr/">https://stti.tripbuilder.co.kr/</a>',
+    'Stacks: Next.js, TailwindCSS, Redux, Typescript',
+    '',
+    'Tripbuilder APP',
+    'Source code is private',
+    'Stacks: Flutter',
+]
+
+const labis = [
+    'Drone Block Coding App',
+    'Source code is private',
+    'Stacks: React Native, Typescript',
+]
+
+const goldenFriends = [
+    '오늘의 티끌',
+    'Frontend(App)',
+    '<a href="https://github.com/Golden-Friends/todo_app">https://github.com/Golden-Friends/todo_app</a>',
+    'Stacks: React Native, Apollo, Typescript',
+    '',
+    'Backend',
+    '<a href="https://github.com/Golden-Friends/todo_server">https://github.com/Golden-Friends/todo_server</a>',
+    'Stacks: Nest.js, Typescript, PostgreSQL, Graphql',
+    '',
+    'Dev only Storage Server',
+    '<a href="https://github.com/Golden-Friends/storage_server_v2">https://github.com/Golden-Friends/storage_server_v2</a>',
+    'Stacks: Django, Django Rest Framework'
 ]
 
 
@@ -133,4 +184,8 @@ export const strings: Record<string, string> = {
     projectCTB: processArrayText(projectCTB),
     projectErin: processArrayText(projectErin),
     projectTimer: processArrayText(timer),
+    projectBuxHexa: processArrayText(buxHexa),
+    tripbuilder: processArrayText(tripbuilder),
+    labis: processArrayText(labis),
+    goldenFriends: processArrayText(goldenFriends),
 }

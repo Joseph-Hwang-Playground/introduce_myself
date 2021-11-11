@@ -52,14 +52,21 @@ export const objects: ObjectRes = {
             summary: "Seriously?",
             descriptionKey: "projectTimer",
         },
+        buxHexa: {
+            name: "🚌",
+            title: "Bux Hexa",
+            subtitles: [],
+            summary: "Toy project from school CS club",
+            descriptionKey: "projectBuxHexa",
+        },
         tb: {
             name: "TB",
             title: "Working on Tripbuilder",
             subtitles: [
                 'position: FE developer'
             ],
-            summary: null,
-            descriptionKey: null,
+            summary: "Contributing projects",
+            descriptionKey: 'tripbuilder',
         },
         labis: {
             name: "LabIs",
@@ -67,8 +74,8 @@ export const objects: ObjectRes = {
             subtitles: [
                 'position: FE developer',
             ],
-            summary: null,
-            descriptionKey: null,
+            summary: "Contributing projects",
+            descriptionKey: 'labis',
         },
         gf: {
             name: "GF",
@@ -76,8 +83,8 @@ export const objects: ObjectRes = {
             subtitles: [
                 'position: CTO',
             ],
-            summary: null,
-            descriptionKey: null,
+            summary: "Contributing projects",
+            descriptionKey: 'goldenFriends',
         },
     },
     statusItem: {
